@@ -16,15 +16,13 @@ import com.example.nofar.finalProject.GUI.Fragments.AddClassSecondFragment;
 import com.example.nofar.finalProject.GUI.Fragments.AddExamFragment;
 import com.example.nofar.finalProject.GUI.Fragments.AddFragment;
 import com.example.nofar.finalProject.GUI.Fragments.AddHWFragment;
+import com.example.nofar.finalProject.GUI.Fragments.AddStudyGroupFragment;
 import com.example.nofar.finalProject.LOGIC.Interfaces.AddChoicesListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.DismissListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.FirstAddClassListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.RefreshDataSetListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 11/03/2018.
- */
 
 public class AddDialog extends DialogFragment implements AddChoicesListener, FirstAddClassListener, DismissListener
 {
@@ -99,21 +97,6 @@ public class AddDialog extends DialogFragment implements AddChoicesListener, Fir
     }
 
     @Override
-    public void MoveToAddExam()
-    {
-        AddExamFragment addExamFragment = new AddExamFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("opt", "new");
-        addExamFragment.setArguments(bundle);
-        addExamFragment.setDialogDismissCallback(this);
-        FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
-        fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-        fragmentTransaction.replace(R.id.addDialogFrame, addExamFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commitAllowingStateLoss();
-    }
-
-    @Override
     public void MoveToSecondAddClass(String courseName, float coursePoints, long startDate, long endDate, int color, boolean isExists, int index)
     {
         Bundle bundle = new Bundle();
@@ -130,6 +113,36 @@ public class AddDialog extends DialogFragment implements AddChoicesListener, Fir
         FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         fragmentTransaction.replace(R.id.addDialogFrame, addClassSecondFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commitAllowingStateLoss();
+    }
+
+    @Override
+    public void MoveToAddExam()
+    {
+        AddExamFragment addExamFragment = new AddExamFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("opt", "new");
+        addExamFragment.setArguments(bundle);
+        addExamFragment.setDialogDismissCallback(this);
+        FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        fragmentTransaction.replace(R.id.addDialogFrame, addExamFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commitAllowingStateLoss();
+    }
+
+    @Override
+    public void MoveToAddStudyGroup()
+    {
+        AddStudyGroupFragment addStudyGroupFragment = new AddStudyGroupFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("opt", "new");
+        addStudyGroupFragment.setArguments(bundle);
+        addStudyGroupFragment.setDialogDismissCallback(this);
+        FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        fragmentTransaction.replace(R.id.addDialogFrame, addStudyGroupFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commitAllowingStateLoss();
     }

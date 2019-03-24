@@ -11,10 +11,6 @@ import android.widget.NumberPicker;
 
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 14/03/2018.
- */
-
 public class GradeDialog extends DialogFragment
 {
     private final int MIN_VALUE = 0;

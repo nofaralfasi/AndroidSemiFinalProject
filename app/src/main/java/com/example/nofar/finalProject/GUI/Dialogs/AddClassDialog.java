@@ -16,10 +16,6 @@ import com.example.nofar.finalProject.LOGIC.Interfaces.FirstAddClassListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.RefreshDataSetListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 11/03/2018.
- */
-
 public class AddClassDialog extends DialogFragment implements FirstAddClassListener, DismissListener
 {
     RefreshDataSetListener refreshDataSetListener;

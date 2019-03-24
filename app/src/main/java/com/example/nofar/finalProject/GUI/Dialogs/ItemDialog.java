@@ -13,10 +13,6 @@ import android.widget.TextView;
 import com.example.nofar.finalProject.LOGIC.Interfaces.AddExamDialogListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 07/03/2018.
- */
-
 public class ItemDialog extends DialogFragment
 {
     private final int MIN_VALUE = 0;

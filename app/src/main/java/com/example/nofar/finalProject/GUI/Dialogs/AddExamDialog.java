@@ -14,9 +14,6 @@ import com.example.nofar.finalProject.LOGIC.Interfaces.DismissListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.RefreshDataSetListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 14/03/2018.
- */
 
 public class AddExamDialog extends DialogFragment implements DismissListener
 {

@@ -14,10 +14,6 @@ import com.example.nofar.finalProject.LOGIC.Interfaces.DismissListener;
 import com.example.nofar.finalProject.LOGIC.Interfaces.RefreshDataSetListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 16/03/2018.
- */
-
 public class AddHWDialog extends DialogFragment implements DismissListener
 {
     RefreshDataSetListener refreshDataSetListener;
