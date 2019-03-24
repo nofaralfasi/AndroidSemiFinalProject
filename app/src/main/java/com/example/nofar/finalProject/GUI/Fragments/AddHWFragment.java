@@ -29,10 +29,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-/**
- * Created by nofar on 08/03/2018.
- */
-
 public class AddHWFragment extends android.support.v4.app.Fragment
 {
     private final String PATTERN = "dd/MM/yy";

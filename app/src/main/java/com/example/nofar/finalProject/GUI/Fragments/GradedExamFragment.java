@@ -25,9 +25,7 @@ import com.example.nofar.finalProject.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by nofar on 08/03/2018.
- */
+
 
 public class GradedExamFragment extends Fragment implements RefreshDataSetListener, OnLongGradedItemListener, SwipeHelperListener, DialogInterface.OnClickListener
 {

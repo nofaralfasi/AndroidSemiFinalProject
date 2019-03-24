@@ -27,10 +27,6 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by nofar on 12/03/2018.
- */
-
 public class AddClassFirstFragment extends android.support.v4.app.Fragment
 {
     private final String PATTERN = "dd/MM/yy";

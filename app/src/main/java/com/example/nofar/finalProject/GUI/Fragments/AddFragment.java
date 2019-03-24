@@ -12,16 +12,13 @@ import android.widget.ImageView;
 import com.example.nofar.finalProject.LOGIC.Interfaces.AddChoicesListener;
 import com.example.nofar.finalProject.R;
 
-/**
- * Created by nofar on 11/03/2018.
- */
-
 public class AddFragment extends Fragment
 {
     public AddChoicesListener listener;
     ImageView imageClass;
     ImageView imageExam;
     ImageView imageHW;
+    ImageView imageStudyGroup;
 
     @Nullable
     @Override
@@ -31,6 +28,7 @@ public class AddFragment extends Fragment
         imageClass = view.findViewById(R.id.addClassImage);
         imageExam = view.findViewById(R.id.addExamImage);
         imageHW = view.findViewById(R.id.addHWImage);
+        imageStudyGroup = view.findViewById(R.id.addStudyGroupImage);
 
         imageClass.setOnClickListener(new View.OnClickListener()
         {
@@ -56,6 +54,15 @@ public class AddFragment extends Fragment
             public void onClick(View view)
             {
                 listener.MoveToAddHomeWork();
+            }
+        });
+
+        imageStudyGroup.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                listener.MoveToAddStudyGroup();
             }
         });
         return view;

@@ -24,10 +24,6 @@ import com.example.nofar.finalProject.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by nofar on 08/03/2018.
- */
-
 public class UngradedExamFragment extends Fragment implements RefreshDataSetListener, SwipeHelperListener, OnLongUngradedItemListener, DialogInterface.OnClickListener, DialogInterface.OnCancelListener
 {
     private RecyclerView ungradedRecyclerView;

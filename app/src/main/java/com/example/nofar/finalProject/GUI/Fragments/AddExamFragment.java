@@ -28,9 +28,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-/**
- * Created by nofar on 08/03/2018.
- */
 
 public class
 AddExamFragment extends android.support.v4.app.Fragment
