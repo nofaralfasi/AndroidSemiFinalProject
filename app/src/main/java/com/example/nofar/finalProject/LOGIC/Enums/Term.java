@@ -1,9 +1,5 @@
 package com.example.nofar.finalProject.LOGIC.Enums;
 
-/**
- * Created by nofar on 09/03/2018.
- */
-
 public enum Term
 {
     A, B, C;
