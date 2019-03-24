@@ -15,9 +15,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by nofar on 13/03/2018.
- */
 
 public class GradedExamAdapter extends RecyclerView.Adapter<GradedExamAdapter.GradedExamViewHolder>
 {

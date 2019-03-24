@@ -16,9 +16,6 @@ import com.example.nofar.finalProject.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by nofar on 07/03/2018.
- */
 
 public class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.CalendarViewHolder>
 {
